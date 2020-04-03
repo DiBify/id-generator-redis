@@ -1,0 +1,32 @@
+{
+  "name": "dibify/id-generator-redis",
+  "type": "library",
+  "description": "DiBify Redis-based Id generator",
+  "keywords": [
+    "db",
+    "database",
+    "orm",
+    "redis"
+  ],
+  "authors": [
+    {
+      "name": "Timur Kasumov aka XAKEPEHOK",
+      "role": "Main developer"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">=7.3.0",
+    "ext-redis": "^5.0.0",
+    "dibify/dibify": "^0.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {"DiBify\\IdGenerator\\Redis\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"DiBify\\IdGenerator\\Redis\\": "tests/"}
+  }
+}
