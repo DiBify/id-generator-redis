@@ -16,8 +16,8 @@ use Redis;
 class IdGenerator implements IdGeneratorInterface
 {
 
-    private $key;
-    private $redis;
+    private string $key;
+    private Redis $redis;
 
     public function __construct(Redis $redis, $key = 'RedisIdGenerator')
     {

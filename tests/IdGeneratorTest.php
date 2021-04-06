@@ -15,14 +15,11 @@ use Redis;
 class IdGeneratorTest extends TestCase
 {
 
-    /** @var Redis */
-    private $redis;
+    private Redis $redis;
 
-    /** @var string */
-    private $key;
+    private string $key;
 
-    /** @var IdGenerator */
-    private $generator;
+    private IdGenerator $generator;
 
     protected function setUp(): void
     {
